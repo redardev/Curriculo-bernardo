@@ -1,57 +1,164 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/css.css">
-    <title>Bernardo Serrano</title>
-</head>
+    <title>Portfólio - Bernardo Serrano</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
 
-<body>
-    <!-- Exercício de criação do currículo  -->
-    <div id="apresentacao">
-        <h1>Bernardo Serrano</h1>
-        <img id="foto" src="imgs/foto bernardo.jpg" height="15%" width="15%" >
-        <h4>(Análista de dados)</h4>
-        <hr>
-    </div>
-    <div id="sobre">
-        <h3>Sobre:</h3>
-        <p>Olá! Meu nome é e estou cursando Análise e Desenvolvimento de Sistemas. Sou apaixonado por tecnologia e desenvolvimento de softwares, e estou sempre em busca de novos desafios para aprimorar minhas habilidades. Tenho experiência em <b>Python</b>, <b>HTML</b>, <b>CSS</b> e <b>Figma</b></p>
-        <p id="center">
-            <a href="https://github.com/redardev/" target="_blank"><img src="imgs/github logo.png" height="45px"
-                    alt="Icon do GitHub" title="GitHub"></a>
-            <a href="https://www.linkedin.com/in/bernardo-serrano-b76ba1326" target="_blank"><img
-                    src="imgs/LinkedIn_logo_initials.png" height="45px" alt="Icon Linkedin" title="Linkedin"></a>
-        </p>
-        <hr>
-    </div>
-    <div id="formacao">
-        <h3>Formação Acadêmica:</h3>
+    <!--Scripts-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+  
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+          <a class="navbar-brand" href="#">Meu Portfólio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#sobre">Sobre Mim</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#formacao">Formação Acadêmica</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#habilidades">Habilidades</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#projetos">Projetos</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#cursos-treinamentos">Cursos e Treinamentos</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  
+
+    <header>
+      <h1>Bernardo Serrano</h1>
+      <img id="foto" src="imgs/foto bernardo.jpg" alt="Foto de Bernardo">
+    <script src="script.js"></script>
+    </header>
+
+    <main>
+      <section id="sobre">
+          <h2>Sobre mim</h2>
+          <div class="texto-limitado">
+              <p>
+                  Ola, sou Bernardo Serrano, estudante de Análise e Desenvolvimento de Sistemas no SENAC, atualmente no 2º período. Tenho interesse em desenvolvimento back-end. Além da programacao, sou fã de jogos, tanto competitivos quanto lineares, que me inspiram a desenvolver habilidades criativas e resolver problemas de forma estratégica.
+              </p>
+          </div>
+      </section>
+  
+      <section id="formacao">
+          <h2>Formação Acadêmica</h2>
+          <ul>
+              <li>Análise e Desenvolvimento de Sistemas - SENAC (Cursando 2º período)</li>
+          </ul>
+      </section>
+  
+      <section id="habilidades">
+          <h2>Habilidades Técnicas</h2>
+          <ul>
+              <li>HTML e CSS básico</li>
+              <li>Lógica de Programação</li>
+          </ul>
+      </section>
+  
+      <section id="projetos">
+          <h2>Projetos</h2>
+          <ul>
+              <li>Desenvolvimento de um site em HTML como parte do curso de ADS</li>
+              <li>Desenvolvimento de um site de ponto para a empresa SIDI</li>
+          </ul>
+      </section>
+      
+      <section id="cursos-treinamentos">
+        <h2>Cursos e Treinamentos</h2>
         <ul>
-            <li>Tecnólogo em Análise e Desenvolvimento de Sistemas (<a
-                    href="https://faculdadesenacpe.edu.br/graduacao/analise-e-desenvolvimento-de-sistemas"
-                    target="_blank">Senac PE <b>2024/2026</b></a>)</li>
+          <li>Oracle Academy - O.C.I Associate </li> (Concluido)</li>
+          <li>Oracle Academy - O.C.I A.I Associate (Concluido)</li>
+          <li>Alura - JavaScript(Concluido)</li>
+          <li>Curso em Video - HTML e CSS (Em andamento)</li>
         </ul>
-        <hr>
-    </div>
-            </tr>
-        </table>
-        <hr>
-    </div>
-    <div>
-        <h3>Endereço/Contato:</h3>
-        <address>
-            Desenvolvido: <a href="bernardo.serrano.sanguinetti@gmail.com"> Bernardo Serrano</a>.<br>
-            Visite: <a href=“https://github.com/redardev/projetos-de-coding”> Portifólio GitHub</a><br>
-            Rua Marechal Deodoro<br> Recife, PE – Brasil
-        </address>
-        <hr>
-    </div>
-    <footer>
-        <span>Copyright © 2024 Bernardo Serrano. Todos os Direitos Reservados.</span>
-    </footer>
-</body>
+      </section>      
+     
+      <!-- Botão para abrir o formulário -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formModal">
+  Abrir Formulário
+</button>
 
+<!-- Modal do Formulário -->
+<div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content" style="background-color: #222; color: white;"> <!-- Adicionei um fundo escuro -->
+          <div class="modal-header" style="border-bottom: 1px solid #ff0000;">
+              <h5 class="modal-title" id="formModalLabel">Formulário de Contato</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <form id="contactForm">
+                  <div class="mb-3">
+                      <label for="firstName" class="form-label">Nome</label>
+                      <input type="text" class="form-control" id="firstName" required>
+                  </div>
+                  <div class="mb-3">
+                      <label for="lastName" class="form-label">Sobrenome</label>
+                      <input type="text" class="form-control" id="lastName" required>
+                  </div>
+                  <div class="mb-3">
+                      <label for="phone" class="form-label">Telefone</label>
+                      <input type="tel" class="form-control" id="phone" required>
+                  </div>
+                  <div class="mb-3">
+                      <label for="email" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="email" required>
+                  </div>
+                  <div class="mb-3">
+                      <label for="message" class="form-label">Mensagem</label>
+                      <textarea class="form-control" id="message" rows="3" required></textarea>
+                  </div>
+                  <div class="mb-3">
+                      <label for="language" class="form-label">Língua Aplicada</label>
+                      <select class="form-select" id="language" required>
+                          <option selected>Escolha...</option>
+                          <option value="ingles">Inglês</option>
+                          <option value="espanhol">Espanhol</option>
+                          <option value="frances">Francês</option>
+                          <option value="portugues">Português</option>
+                      </select>
+                  </div>
+                  <div class="mb-3">
+                      <label for="fileUpload" class="form-label">Upload de Arquivo</label>
+                      <input type="file" class="form-control" id="fileUpload" accept=".pdf,.doc,.docx,.jpeg,.png">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                  <button type="reset" class="btn btn-secondary">Limpar</button>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
+
+  </main>
+    <footer>
+      <h2>Conecte-se</h2>
+      <p>Email: <a href="mailto:bernardo.serrano.sanguinetti@gmail.com">bernardo.serrano.sanguinetti@gmail.com</a></p>
+      <p>Telefone: (81)98960-1993</p>
+      <p>GitHub: <a href="https://github.com/redardev" target="_blank">Meu GitHub</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/bernardo-serrano-b76ba1326/" target="_blank">Meu LinkedIn</a></p>
+    </footer>
+  </body>
 </html>
