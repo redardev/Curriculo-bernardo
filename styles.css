@@ -1,92 +1,145 @@
-html {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    /* background-image: linear-gradient(to top, #031fa3, #3147b8, #546cca, #7990d9, #a1b5e6, #b0c8ec, #c6dbf0, #e0ecf5, #e5f0f6, #ebf4f7, #f2f8f9, #f9fbfb); */
-    background-color: #F5F5F5;
-}
-
-table {
-    font-family: 'Courier New', Courier, monospace;
-    border-collapse: collapse;
-    width: 80%;
-    margin-left: 10%;
-}
-
-td {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 5px;
-}
-
-th {
-    border: 1px solid #dddddd;
-    background-color: #424242;
-    color: #F5F5F5;
+/* Estilos Gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a0a; 
+    color: #f5f5f5; 
+  }
+  
+  /* Header */
+  header {
     text-align: center;
-    padding: 8px;
-}
-
-tr:nth-child(even) {
-    background-color: #229799;
-    color: #F5F5F5;
-}
-
-address {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-left: 3%;
-}
-
-hr {
-    border: solid #dddddd 1px;
-}
-
-footer {
-    text-align: center;
-    font-size: small;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-ul {
-    list-style-type: square;
-}
-
-iframe {
-    width: 80%;
-    height: 300px;
-    margin-left: 10%;    
-}
-
-hr {
-    width: 80%;
-    margin-left: 10%;
-}
-
-p {
-    text-align: justify;
-}
-
-#sobreP {
-    text-align: justify;
-    color: white;
-    background-color: rgb(255, 50, 40);
-}
-
-#menu {
-    text-align: center;
-}
-
-#apresentacao {
-    text-align: center;
-}
-
-#endereco {
-    width: 80%;
-    margin-left: 10%;
-}
-
-#center {
-    text-align: center;
-}
-
-#foto {
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: #4d34db; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+  }
+  
+ 
+  #foto {
     border-radius: 50%;
-}
+    width: 180px; /* Aumentando a largura da foto */
+    height: auto;
+    margin-top: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7);
+  }
+  
+  
+  
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h2 {
+    color: #4d34db; 
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  p, ul {
+    line-height: 1.6;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  ul li::before {
+    content: "•";
+    color: #4d34db;
+    padding-right: 8px;
+    font-size: 1.2em;
+  }
+  
+  /* Texto Justificado e Centralizado */
+  .texto-limitado {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer a {
+    color: #4d34db;
+    text-decoration: none;
+    transition: color 0.3s, text-decoration 0.3s;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+    color: #fff;
+  }
+  
+  /* Botões e Links Estilizados */
+  button, a.button {
+    background-color: #462bdd;
+    color: #4d34db;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover, a.button:hover {
+    background-color: #4d34db;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 600px) {
+    main {
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 1.8em;
+    }
+  
+    #foto {
+      width: 80px;
+    }
+  }
+  
+  /* Estilo da Navbar */
+  .navbar {
+    margin-bottom: 20px;
+    padding: 1rem; /* Aumenta o espaço interno da navbar */
+  }
+  
+  .navbar-nav .nav-link {
+    transition: color 0.3s;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #ffffff; 
+    text-decoration: underline; /* Adiciona um efeito de sublinhado ao passar o mouse */
+  }
+  
+  /* Alinhamento das nav-links */
+  .navbar-collapse {
+    justify-content: flex-end; /* Faz os links ficarem alinhados à direita */
+  }
+  
+  /* Ajuste a largura da navbar para dispositivos pequenos */
+  @media (max-width: 576px) {
+    .navbar {
+        text-align: center; /* Centraliza os links em dispositivos pequenos */
+    }
+  }
